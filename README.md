@@ -3,8 +3,27 @@ PCA Factor Model with Monte Carlo Validation
 Overview: 
 This project identifies risk factors that drive portfolio returns by applying
 dimensionality reduction to historical stock data. PCA shows that portfolio 
-variance can be explained by about 3-4 systematic factors. This stability is later 
-validated through a Monte Carlo simulation. 
+variance can be explained by about 3-4 systematic factors. This stability is later validated through a Monte Carlo simulation. 
+
+How PCA works Mathematically:
+
+1. Standardize data
+
+Z = (X- mu)/std
+Each stock gets a mean of 0 and std of 1, preventing high volatility stocks
+from taking over.
+
+2. Compute Correlation Matrix
+
+Shows how each stock correlates with every other stock with a 15x15 matrix.
+
+3. Eigenvalue Decomposition
+lambda = diagonal matrix of eigenvalues (how much variance each PC explains)
+V = matrix of eigenvectors (the direction of each PC in the 15x15 matrix)
+
+4. Calculate Factor Loadings
+Convert eigenvectors to interpretable loadings (correlations between stocks
+and PC's).
 
 1. Data Collection
 
