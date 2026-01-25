@@ -67,6 +67,7 @@ PC4: Mixed colors, no pattern. Confirms this is noise and not a real factor.
 This matters because instead of tracking multiple stocks, we can track 
 3 key factors and understand 77% of what is happening. 
 
+Factor Stability
 <img width="754" height="618" alt="image" src="https://github.com/user-attachments/assets/8d4efd03-7627-4d4d-ac9e-e52b2a4087f2" />
 
 <img width="751" height="567" alt="image" src="https://github.com/user-attachments/assets/5fd171fd-967c-4792-8e7a-79ffd409d9da" />
@@ -74,7 +75,10 @@ This matters because instead of tracking multiple stocks, we can track
 <img width="749" height="567" alt="image" src="https://github.com/user-attachments/assets/5bd1a219-4f3b-4d02-8778-3546e9dff67b" />
 
 
-
+As seen by the eigenvalue stability of all factors, PC1 and PC2 are very stable as their eigenvalue always stays well above the Kaiser criterion(>1)
+and never dips below 2. PC3 on the other hand is raning from about 1.1-1.3
+which means that the consumer factor can change frequently but is always above the Kaiser Criterion. Therefore, it is a real factor but weaker and more sensitive when time periods are changed. PC4 significantly falls below 1
+and in 10-15% of samples, the eigenvalue drops below 1 meaning it would not qualify as a factor meaning it is sample dependent. 
 
 
 
