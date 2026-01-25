@@ -26,26 +26,46 @@ distinguish factors from sample noise.
 
 Key Results
 
-Components  Eigenvalues  Explained Variance %  Cumulative Variance %
-0         PC1         7.00                 46.63                  46.63
-1         PC2         2.36                 15.70                  62.33
-2         PC3         1.17                  7.83                  70.16
-3         PC4         1.03                  6.85                  77.01
-4         PC5         0.75                  5.01                  82.02
-5         PC6         0.55                  3.68                  85.70
-6         PC7         0.44                  2.92                  88.61
-7         PC8         0.36                  2.39                  91.00
-8         PC9         0.34                  2.29                  93.30
-9        PC10         0.24                  1.60                  94.90
-10       PC11         0.22                  1.48                  96.37
-11       PC12         0.17                  1.12                  97.49
-12       PC13         0.15                  0.97                  98.46
-13       PC14         0.13                  0.84                  99.31
-14       PC15         0.10                  0.69                 100.00
+Factor: 
+PC1 Interpretation: Market Facotr (Beta)
+Eigenvalue = 7 (6.5-7.5)
+Explained Variance = 46.63%
+
+PC2 Interpretion: Value vs Growth rotation
+Eigenvalue = 2.36 (2.2-2.6)
+Explained Variance = 15.70%
+
+PC3 Interpretation: Consumer/Sector factor
+Eigenvalue = 1.17 (1.1-1.3)
+Explained Variance = 7.83%
+
+PC4 Interpreation: Unstable 
+Eigenvalue = 1.03
+Explained Variance - 6.85%
 
 <img width="754" height="593" alt="image" src="https://github.com/user-attachments/assets/0d1e5d8f-0cf9-4a5c-8e16-daf872b5304f" />
 
+Factor Loadings
 <img width="763" height="588" alt="image" src="https://github.com/user-attachments/assets/53207331-4f2d-4b7a-876e-1a4e84b959b7" />
+
+Red (Positive) = Stock moves with the factor
+Blue (Negative) = Stock moves against the factor
+White (Zero) = Stock is barely moved by the factor
+
+PC1: All stocks are red (0.43-0.85). When the market goes up, everything
+else goes up together.
+
+PC2: MSFT, CVX, BAC are positive (value stocks). AMZN, NVDA, JPM are negative
+(growth stocks). When investors prefer value stocks, they go up and growth 
+stocks go down and vice versa. 
+
+PC3: TGT, WMT, WFC, are strongly positive (0.44-0.61) while the rest are near
+zero. While consumers are spending, stocks move together. 
+
+PC4: Mixed colors, no pattern. Confirms this is noise and not a real factor.
+
+This matters because instead of tracking multiple stocks, we can track 
+3 key factors and understand 77% of what is happening. 
 
 <img width="754" height="618" alt="image" src="https://github.com/user-attachments/assets/8d4efd03-7627-4d4d-ac9e-e52b2a4087f2" />
 
