@@ -5,27 +5,20 @@ This project identifies risk factors that drive portfolio returns by applying di
 
 Goal: Individual asset returns are driven by systematic and unsystematic risk. There might be hundreds or even thousands of factors that affect the stock movement, and some of them could be sample noise. The goal of this project is to use Principal Component Analysis to find 2-3 main components that explain about 80% of the variance on what factors scauses the stocks to move.
 
-How PCA works Mathematically - PCA takes a unit vector and projects it across the sample of data. Using the built in PCA function in Python, the vector that captures the most amount of variance is automatically selected. This is known as PC1; it is the unit vector that captures the most amount of variance of stock movement. However, it does not capture all movement, which is why we use multiple PC's. For example PC2 and PC3 are the next vectors that are created orthogonal to the previous vector. This is done to capture variance that has not been captured by previous PC's. 
+Mathematical Framework - PCA aims to reduce dimensionality of a 15-stock return matrix while trying to retain the maximum amount of variance. The process follows these steps. 
 
-1. Standardize data
+1. Covariance Matrix: We compute the 15 x 15 matrix of standardized stock returns to identify how assets move in relation to each other
 
-Z = (X- mu)/std
-
-Each stock gets a mean of 0 and std of 1, preventing high volatility stocks
-from taking over.
-
-2. Compute Correlation Matrix
-
-Shows how each stock correlates with every other stock with a 15x15 matrix.
-
-3. Eigenvalue Decomposition
+2. Eigenvalue Decomposition
 
 lambda = diagonal matrix of eigenvalues (how much variance each PC explains)
 V = matrix of eigenvectors (the direction of each PC in the 15x15 matrix)
 
-5. Calculate Factor Loadings
-Convert eigenvectors to interpretable loadings (correlations between stocks
-and PC's).
+3. Principal Components
+
+PC1(Main Eigenvector): The unit vector captures the direction of the highest variance in the data. This is typically beta in finance. Next, subsequent components are created to be orthogonal to the previous ones. This ensures each factor represents a uncorrelated source of risk. 
+
+4. Dimensionality Reduction: By selecting only the components with eigenvalues > 1 (Kaiser Criterion), we filter out noise and retain only the statistcally significant drivers.
 
 1. Data Collection
 
@@ -41,7 +34,7 @@ factor was stable and not noise.
 
 3. Monte Carlo Validation
 
-Bootstrap sampled with replace (1,000) iterations and re-ran PCA on each sample to
+Bootstrap sampled with replacement (1,000) iterations and re-ran PCA on each sample to
 test the factor stability. Calculated 95% confidence intervals for eigenvalues to
 distinguish factors from sample noise. 
 
