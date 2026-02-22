@@ -20,6 +20,7 @@ PC1(Main Eigenvector): The unit vector captures the direction of the highest var
 
 4. Dimensionality Reduction: By selecting only the components with eigenvalues > 1 (Kaiser Criterion), we filter out noise and retain only the statistcally significant drivers.
 
+Steps
 1. Data Collection
 
 Dataset: 5 years of daily returns from 15 stocks across technology, finance, 
