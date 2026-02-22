@@ -3,7 +3,7 @@ PCA Factor Model with Monte Carlo Validation
 Project Overview: 
 This project identifies risk factors that drive portfolio returns by applying dimensionality reduction to historical stock data. PCA shows that portfolio variance can be explained by about 3-4 systematic factors. This stability is later validated through a Monte Carlo simulation. 
 
-Goal: Individual asset returns are driven by systematic and unsystematic risk. There might be hundreds or even thousands of factors that affect the stock movement, and some of them could be sample noise. The goal of this project is to use Principal Component Analysis to find 2-3 main components that explain about 80% of the variance on what factors scauses the stocks to move. 
+Goal: Individual asset returns are driven by systematic and unsystematic risk. There might be hundreds or even thousands of factors that affect the stock movement, and some of them could be sample noise. The goal of this project is to use Principal Component Analysis to find 2-3 main components that explain about 80% of the variance on what factors scauses the stocks to move.
 
 How PCA works Mathematically - PCA takes a unit vector and projects it across the sample of data. Using the built in PCA function in Python, the vector that captures the most amount of variance is automatically selected. This is known as PC1; it is the unit vector that captures the most amount of variance of stock movement. However, it does not capture all movement, which is why we use multiple PC's. For example PC2 and PC3 are the next vectors that are created orthogonal to the previous vector. This is done to capture variance that has not been captured by previous PC's. 
 
