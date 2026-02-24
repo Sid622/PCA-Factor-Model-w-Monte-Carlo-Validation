@@ -58,9 +58,13 @@ PC4 Interpreation: Unstable
 Eigenvalue = 1.03
 Explained Variance - 6.85%
 
-<img width="754" height="593" alt="image" src="https://github.com/user-attachments/assets/0d1e5d8f-0cf9-4a5c-8e16-daf872b5304f" />
+Correlation Matrix
+
+<img width="763" height="605" alt="image" src="https://github.com/user-attachments/assets/e3b89147-6898-40b9-99d4-30043604cd0f" />
+
 
 Factor Loadings
+
 <img width="763" height="588" alt="image" src="https://github.com/user-attachments/assets/53207331-4f2d-4b7a-876e-1a4e84b959b7" />
 
 Red (Positive) = Stock moves with the factor
