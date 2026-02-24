@@ -65,7 +65,7 @@ Correlation Matrix
 
 Factor Loadings
 
-<img width="763" height="588" alt="image" src="https://github.com/user-attachments/assets/53207331-4f2d-4b7a-876e-1a4e84b959b7" />
+<img width="766" height="590" alt="image" src="https://github.com/user-attachments/assets/59f95f66-9b35-477c-ba64-4fabd63810a9" />
 
 Red (Positive) = Stock moves with the factor
 Blue (Negative) = Stock moves against the factor
@@ -86,11 +86,11 @@ This matters because instead of tracking multiple stocks, we can track
 3 key factors and understand 77% of what is happening. 
 
 Factor Stability
-<img width="754" height="618" alt="image" src="https://github.com/user-attachments/assets/8d4efd03-7627-4d4d-ac9e-e52b2a4087f2" />
+<img width="757" height="611" alt="image" src="https://github.com/user-attachments/assets/c0d5533c-a39b-47c3-9025-7e6d45d8f8db" />
 
-<img width="751" height="567" alt="image" src="https://github.com/user-attachments/assets/5fd171fd-967c-4792-8e7a-79ffd409d9da" />
+<img width="750" height="568" alt="image" src="https://github.com/user-attachments/assets/19fdb43d-ffeb-4b9c-a223-97b049300732" />
 
-<img width="749" height="567" alt="image" src="https://github.com/user-attachments/assets/5bd1a219-4f3b-4d02-8778-3546e9dff67b" />
+<img width="749" height="567" alt="image" src="https://github.com/user-attachments/assets/13d32d73-3454-4f52-9cea-b0dfa5a61ab4" />
 
 
 As seen by the eigenvalue stability of all factors, PC1 and PC2 are very stable as their eigenvalue always stays well above the Kaiser criterion(>1)
