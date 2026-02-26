@@ -53,18 +53,22 @@ Factor:
 PC1 Interpretation: Market Factor (Beta)
 Eigenvalue = 6.03 (5.58-6.50)
 Explained Variance = 46.63%
+All stocks are red (0.22-0.81). When the market goes up, everything else goes up together. 
 
 PC2 Interpretion: Value vs Growth rotation
 Eigenvalue = 2.36 (2.18-2.54)
 Explained Variance = 15.70%
+NVDA, JPM, and AMZN all have high loadings while MSFT, CVX, and COP all have low loadings as seen from the factor correlations graph. This shows a sector rotation in the sense that when investors prefer highly volatile growth stocks (NVDA, JPM, AMZN), they rotate out of the traditional value stocks in the energy/defensive sectors. 
 
-PC3 Interpretation: Quality or Size
+PC3 Interpretation: Quality
 Eigenvalue = 1.49 (1.36-1.62)
 Explained Variance = 7.83%
+Strong positive correlations in JNJ and XOM which are seen as stable companies. Surprisingly, GOOG is also present here instead of PC2 which indicates it could have traded like a mature tech company instead of a speculative company. 
 
 PC4 Interpreation: Momentum Reversal
 Eigenvalue = 1.19 (1.11-1.29)
 Explained Variance - 6.85%
+TGT and WMT are key retail companies present here along with WFC which is related to domestic banking. Although this PC passes the Kaiser Criterion, it is still highly sensitive to noise than the other PC's. 
 
 Correlation Matrix
 
@@ -79,32 +83,17 @@ Red (Positive) = Stock moves with the factor
 Blue (Negative) = Stock moves against the factor
 White (Zero) = Stock is barely moved by the factor
 
-PC1: All stocks are red (0.43-0.85). When the market goes up, everything
-else goes up together.
-
-PC2: MSFT, CVX, BAC are positive (value stocks). AMZN, NVDA, JPM are negative
-(growth stocks). This shows the rotation between growth and value regimes. 
-
-PC3: TGT, WMT, WFC, are strongly positive (0.44-0.61) while the rest are near
-zero. While consumers are spending, stocks move together. 
-
-PC4: Mixed colors, no pattern. Confirms this is noise and not a real factor.
-
-This matters because instead of tracking multiple stocks, we can track 
-3 key factors and understand 77% of what is happening. 
-
 Factor Stability
+
 <img width="757" height="611" alt="image" src="https://github.com/user-attachments/assets/c0d5533c-a39b-47c3-9025-7e6d45d8f8db" />
 
 <img width="750" height="568" alt="image" src="https://github.com/user-attachments/assets/19fdb43d-ffeb-4b9c-a223-97b049300732" />
 
 <img width="749" height="567" alt="image" src="https://github.com/user-attachments/assets/13d32d73-3454-4f52-9cea-b0dfa5a61ab4" />
 
+<img width="756" height="562" alt="image" src="https://github.com/user-attachments/assets/6dd27fb4-5603-4faf-998e-479bbfe1a226" />
 
-As seen by the eigenvalue stability of all factors, PC1 and PC2 are very stable as their eigenvalue always stays well above the Kaiser criterion(>1) and never dips below 2. PC3 on the other hand is ranging from about 1.1-1.3
-which means that the consumer factor can change frequently but is always above the Kaiser Criterion. Therefore, it is a real factor but weaker and more sensitive when time periods are changed. PC4 significantly falls below 1
-and in 10-15% of samples, the eigenvalue drops below 1 meaning it would not qualify as a factor meaning it is sample dependent. 
-
+PC1-PC3 as shown by the box and whisker plot had eigenvalues significantly higher than 1 so they can be used as factors. PC4 also barely has an eigenvalue over one which means it also counts as a PC. PC5 on the other hand never goes above 1 even in the 95th percentile proving that it cannot be a PC. This matters because instead of tracking multiple stocks, we can track 4 key factors and understand 74% of movement in the portfolio.
 
 
 
