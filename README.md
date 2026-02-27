@@ -49,7 +49,7 @@ distinguish factors from sample noise.
 
 Key Results
 
-Factor: 
+Factors: 
 PC1 Interpretation: Market Factor (Beta)
 Eigenvalue = 6.03 (5.58-6.50)
 Explained Variance = 46.63%
@@ -65,7 +65,7 @@ Eigenvalue = 1.49 (1.36-1.62)
 Explained Variance = 7.83%
 Strong positive correlations in JNJ and XOM which are seen as stable companies. Surprisingly, GOOG is also present here instead of PC2 which indicates it could have traded like a mature tech company instead of a speculative company. 
 
-PC4 Interpreation: Momentum Reversal
+PC4 Interpretation: Momentum Reversal
 Eigenvalue = 1.19 (1.11-1.29)
 Explained Variance - 6.85%
 TGT and WMT are key retail companies present here along with WFC which is related to domestic banking. Although this PC passes the Kaiser Criterion, it is still highly sensitive to noise than the other PC's. 
